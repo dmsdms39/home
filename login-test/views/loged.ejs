@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Login Page</title>
+
+</head>
+
+<body>
+
+   <form method="POST" action="/process/login">
+
+       <table>
+
+           <tr>
+
+                <td><label>로그인</label></td>
+
+                <td><input type="text"  name="id"/></td>
+
+           </tr>
+
+           <tr>
+
+                <td><label>패스워드</label></td>
+
+                <td><input type="password"  name="pass"/></td>
+
+           </tr>
+
+       </table>
+
+       <input type="submit" value="전송" name=""/>
+
+   </form>
+
+
+
+   <h1> 아이디는 <%= dataId %></h1><br>
+
+    <h1> 패스워드는  <%= dataPs %></h1>
+
+</body>
+
+</html>
